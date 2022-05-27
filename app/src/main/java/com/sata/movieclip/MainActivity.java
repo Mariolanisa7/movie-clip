@@ -34,6 +34,8 @@ public class MainActivity extends AppCompatActivity {
                 return true;
             case R.id.menu_logout:
                 //buatkan action untuk masuk kehalaman login
+                Intent intent1 = new Intent(this,LoginActivity.class);
+                intent1.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 return true;
             default:
         }
